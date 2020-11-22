@@ -1,0 +1,42 @@
+.main-container{
+  background-color: black;
+  color: white;
+  width: 400px;
+  margin: 0 auto;
+}
+
+/* id-setter */
+
+.id-setter__button, .id-setter__input{
+  padding: 0;
+  height: 40px;
+  width: 100px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  background-color: white;
+}
+.id-setter__button{
+  margin-left: 10px;
+}
+.id-setter__button:hover{
+  background-color: black;
+  border-color: white;
+  color: white;
+}
+
+.id-setter__button:focus, .id-setter__input{
+  outline: none;
+}
+
+.id-setter{
+  margin-bottom: 30px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+/* api component content */
+
+.hello_message{
+  font-size: 20px;
+}

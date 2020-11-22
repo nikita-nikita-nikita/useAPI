@@ -1,12 +1,13 @@
 import React from 'react';
-import './appStyles.scss';
+import "./appStyles.css";
 import {hot} from 'react-hot-loader/root';
+import ApiComponent from './components/apiComponent';
 
 const App = () => {
     return (
-        <main className="app">
-            My App
-        </main>
+            <main className="app">
+                <ApiComponent/>
+            </main>
     );
 };
 

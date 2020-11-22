@@ -5,7 +5,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const webpack = require('webpack')
 
-module.exports = ({MODE: NODE_ENV = 'production'}) => {
+module.exports = ({NODE_ENV = 'production'}) => {
     const isDev = NODE_ENV === 'development';
     const isProd = NODE_ENV === 'production';
 
@@ -36,6 +36,8 @@ module.exports = ({MODE: NODE_ENV = 'production'}) => {
 
     //ENTRY
     const entry = isDev ? {entry: ['react-hot-loader/patch', './src']} : {}
+
+    console.log(NODE_ENV);
 
     return {
         ...entry,
