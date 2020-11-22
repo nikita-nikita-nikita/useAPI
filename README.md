@@ -43,6 +43,6 @@ base: string
 |option|value|
 |---|---|
 |`attemptsNumber`| by default `1` just a count os requests in case of failure | 
-|`base`| by default `https://` with api they're forms request url `base + api`  | 
+|`base`| by default `https://` with api they're form request url `base + api`  | 
 
 
